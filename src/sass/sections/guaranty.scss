@@ -1,0 +1,135 @@
+.guaranty {
+background-color: white;
+&__title {
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+color: rgb(17, 21, 23);
+font-weight: 800;
+line-height: 3.127;
+text-align: center;
+letter-spacing: 1px;
+}
+
+&__block {
+background-color: rgb(241, 241, 241);
+}
+
+&__description {
+font-size: 11px;
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+color: rgb(24, 25, 29);
+line-height: 1.818;
+letter-spacing: 0.55px;
+display: block;
+text-align: left;
+}
+
+&__point_short,
+&__point_long {
+color: rgb(255, 107, 8);
+}
+
+&__list {
+position:relative;
+padding-top:24px;
+padding-bottom:46px;
+}
+
+&__list::before {
+content: '';
+display: block;
+border-width: 0.5px;
+border-color: rgb(186, 186, 186);
+border-style: dotted;
+position: absolute;
+height: 270px;
+left: 8px;
+top: 42px;
+}
+
+&__item {
+padding-left: 40px;
+position: relative;
+}
+
+&__item:not(:last-child) {
+margin-bottom: 26px;
+}
+
+&__item::before {
+content: '';
+display: block;
+background-image: url(../images/icons/fire/noun_Campfire_2425646.svg);
+width: 14px;
+height: 20px;
+position: absolute;
+left: 0;
+background-repeat: no-repeat;
+background-size: cover;
+}
+}
+
+@media (min-width: 768px) {
+.guaranty__block-cont {
+background-color: rgb(241, 241, 241);
+}
+
+.guaranty {
+&__block {
+background-color: white;
+}
+
+&__title {
+font-size: 26px;
+}
+
+&__list::before {
+margin-left: 60px;
+height: 180px;
+}
+
+&__item {
+max-width: 546px;
+margin-left: 60px;
+padding-left: 36px;
+}
+}
+}
+
+@media (min-width: 1280px) {
+.guaranty {
+&__title {
+font-size: 42px;
+}
+
+&__list {
+padding-top: 50px;
+}
+
+&__list::before {
+height: 250px;
+left: 68px;
+top: 75px;
+}
+
+&__item {
+padding-left: 60px;
+margin-left: 116px;
+max-width: 900px;
+}
+
+&__item::before {
+width: 22px;
+height: 30px;
+}
+
+&__description {
+font-size: 18px;
+}
+
+&__point_long {
+display: block;
+}
+}
+}

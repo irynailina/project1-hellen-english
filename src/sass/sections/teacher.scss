@@ -1,0 +1,319 @@
+.section__title {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(17, 21, 23);
+    font-weight: 800;
+    line-height: 1.5;
+    padding-top: 250px;
+    padding-bottom: 30px;
+  }
+
+  .item__name {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(17, 21, 23);
+    font-weight: 800;
+    line-height: 1.823;
+    padding-top: 27px;
+    padding-bottom: 10px;
+  }
+
+  .item__name::after {
+      display: block;
+      content: "";
+      width: 280px;
+      height: 1px;
+      margin: 0 auto;
+      margin-top: 10px;
+      background-color: rgb(133, 133, 133);
+      opacity: 0.38;
+      margin-bottom: 28px;
+  }
+
+    .about__teacher {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif ;
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+  }
+
+.list__about__teacher {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 18px;
+}
+
+
+
+
+.text {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 1.538;
+  letter-spacing: 1px;
+  padding-right: 9px;
+  font-weight: 800;
+}
+
+.list__about__teacher::before {
+    width: 18px;
+    height: 18px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/icons/check/noun_Check_2422424.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+// .сheck::before {
+//     background-image: url(../images/icons/check/noun_Check_2422424.svg);
+//     width: 16px;
+//     height: 12px;
+//     fill: orange;
+//     display: block;
+//     content: "";
+//     position: absolute;
+// }
+
+
+.text__description {
+  position: relative;
+}
+
+.text__description::before {
+    display: block;
+    content: "";
+    margin-top: 23px;
+    margin-bottom: 22px;
+    background-color: rgb(255, 107, 8);
+    left: 14px;
+    width: 25px;
+    height: 2px;
+    padding-left: 13px;
+    position: absolute;
+    top: -31px
+}
+
+
+
+.text__description__teacher {
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(133, 133, 133);
+    line-height: 20px;
+    font-weight: 400;
+    // left: 34.937px;
+    margin-bottom: 27px;
+    padding-left: 13px;
+}
+
+
+
+.togo {
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 107, 8);
+    text-decoration: underline;
+    line-height: 2.652;
+    padding-bottom: 58px;
+    padding-left: 11px;
+  }
+
+
+//////////////TABLET//////////////
+
+  @media screen and (min-width:768px) {
+
+    .section__title {
+      font-size: 26px;
+      line-height: 2.405;
+    }
+
+    .teacher__img__text-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img__container {
+    width: 245px; /*Пересчитать или в пх или оставить в прц (но тоже пересчитать)*/
+    }
+
+     .text__wrapper {
+     width: 404px;
+    //   // padding-left: 30px;
+     }
+
+    .item__name {
+      padding-top: 0;
+      font-size: 20px;
+    }
+
+    .item__name::after {
+      display: block;
+      content: "";
+      width: 396px;
+      height: 1px;
+      margin: 0 auto;
+      margin-top: 17px;
+      background-color: rgb(133, 133, 133);
+      opacity: 0.38;
+      margin-bottom: 26px;
+  }
+
+    .text {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(17, 21, 23);
+      font-weight: bold;
+      line-height: 1.538;
+    }
+
+
+
+    .text__description__teacher {
+      font-size: 11px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(133, 133, 133);
+      line-height: 1.818;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+}
+
+  //////////DESKTOP////////////
+
+  @media screen and (min-width:1280px) {
+
+    .section__title {
+      font-size: 42px;
+      line-height: 1.489;
+    }
+
+    .teacher__img__text-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img__container {
+    width: 495px; /*Пересчитать или в пх или оставить в прц (но тоже пересчитать)*/
+    }
+
+     .text__wrapper {
+     width: 610px;
+    //   // padding-left: 30px;
+     }
+
+    .item__name {
+      padding-top: 0;
+      font-size: 29px;
+      line-height: 1;
+    }
+
+    .item__name::after {
+      display: block;
+      content: "";
+      width: 610px;
+      height: 1px;
+      margin: 0 auto;
+      margin-top: 17px;
+      background-color: rgb(133, 133, 133);
+      opacity: 0.38;
+      margin-bottom: 26px;
+  }
+
+  .about__teacher {
+    margin-bottom: 34px;
+  }
+
+  .list__about__teacher {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 16px;
+}
+
+// .list__about__teacher:not(:last-child) {
+//   margin-bottom: 35px;
+// }
+
+
+    .text {
+      font-size: 16.667px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(17, 21, 23);
+      font-weight: bold;
+      line-height: 1.75;
+      // padding-bottom: 35px;
+    }
+
+    .text__description {
+      padding-top: 36px;
+    }
+
+    .text__description::before {
+      top: -26px;
+    }
+
+    .teacher__image {
+      height: 644px;
+    }
+
+
+
+    .text__description__teacher {
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(133, 133, 133);
+      line-height: 1.75;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+
+
+    .togo {
+      font-size: 16.667px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(255, 107, 8);
+      text-decoration: underline;
+      line-height: 1.75;
+      padding-bottom: 58px;
+      padding-left: 11px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

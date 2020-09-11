@@ -1,0 +1,14 @@
+@mixin section-title-style($ff: "Montserrat", $fs: 42px, $fw: bold, $lh: 1.489, $ls: 2.1px) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin section-items($ff: "Montserrat", $fs: 18px, $fw: bold, $lh: 1.556, $ls: 0.9) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

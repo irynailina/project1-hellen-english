@@ -1,0 +1,119 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &-contact {
+        padding-bottom: 14px;
+    }
+
+    &-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-contacts_item--phone {
+        position: relative;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 38px;
+        color: #111517;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        padding-left: 30px;
+
+        
+
+        &::before {
+            position: absolute;
+            display: inline-block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 5px;
+            background-image: url("../images/icons/tel/noun_call_2543948.svg");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &_insta {
+        display: block;
+        margin: 0 auto;
+        width: 38px;
+        height: 38px;
+    }
+
+    &_logotype {
+        margin-top: 10px;
+    }
+
+    &-rights {
+        background-color: $main-color;
+
+        &_inf {
+            font-size: 11px;
+            letter-spacing: 1px;
+            line-height: 70px;
+            color: #fdfefe;
+            font-family: "Montserrat";
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-contacts {
+      display: flex;
+      justify-content: space-between;
+      width: 360px;
+    }
+
+    .footer_logotype {
+        margin: 0;
+
+        &:hover {
+            animation-name: tada;
+            animation-duration: 1s;
+          }
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 557px;
+        align-items: center;
+    }
+
+    .footer-contacts_item--phone {
+        font-size: 20px;
+}
+
+    .footer-rights_inf {
+        text-align: left;
+    }
+ }
+
+ @media screen and (min-width: 1280px) {
+    .footer-contacts {
+        width: 455px;
+    }
+
+    .footer-section {
+          width: 830px;
+        }
+
+    .footer-contacts_item--phone {
+            font-size: 27px;
+    }
+
+        
+    .footer-rights_inf {
+        font-size: 15px;
+        }
+ }
+ 

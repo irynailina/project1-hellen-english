@@ -1,0 +1,256 @@
+.slider {
+  padding-top: 46px;
+  padding-bottom:95px ;
+
+}
+
+.slider__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(17, 21, 23);
+  text-align: center;
+  line-height: 26.5px;
+  margin-bottom: 22px;
+}
+
+
+.slider__block {
+  min-height: 522px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.slider__wrapper {
+    box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 32px;
+    margin-bottom: 18px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider__list::after {
+  background-image: url(../images/icons/vk/vk.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.slider__list-image {
+  margin: 0 auto;
+}
+
+.slider__list-block {
+  text-align: center;
+  width: 223px;
+  margin: 0 auto;
+}
+
+.slider__list-name {
+  color:$decor-color;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.slider__list-title {
+  color: rgb(133, 133, 133);
+  margin-bottom: 18px;
+  font-size: 12.5px;
+  line-height: 16.5px;
+  letter-spacing: .55px;;
+}
+
+.slider__list-text {
+  color:$main-color;
+  height: 138px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: .55px;
+}
+
+.slider__list-text_sentences {
+  display: none;
+}
+
+.slider__list-link, .slider__list-link_word {
+  color:$decor-color;
+  text-decoration: underline;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+
+
+.slider__block {
+  position: relative;
+}
+
+.slider__btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.slider__btn-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%);
+}
+
+.slider__btn {
+  display: inline-block;
+  width: 35px;
+  height: 38px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider__btn-prev {
+  background-image: url(../images/icons/arrow/arrow-left.png);
+}
+
+.slider__btn-next {
+  background-image: url(../images/icons/arrow/arrow-right.png);
+}
+
+.slider__feedback {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__feedback-image {
+  margin-right: 10px;
+}
+
+.slider__feedback-item_image {
+  display: none;
+}
+
+.slider__feedback-image {
+border: 2px solid transparent;
+
+&_active {
+  border: 2px solid $decor-color;
+  border-radius: 50%;
+}
+}
+
+.slider__list-image-desktop {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .slider__block {
+    min-height: 360px;
+  }
+
+  .slider__title {
+    font-size: 26px;
+  }
+
+  .slider__list {
+    padding-left: 36px;
+  }
+
+  .slider__list-text_sentences {
+    display: inline-block;
+  }
+
+  .slider__list-link {
+    display: none;
+  }
+
+  .slider__wrapper {
+    display: flex;
+  }
+
+  .slider__list-block {
+    text-align: left;
+    width: 470px;
+    margin: 0 auto;
+  }
+
+  .slider__btn-wrapper {
+    width: 106%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider__feedback-item_image {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1280px) {
+
+  .slider__title {
+    font-size: 42px;
+    line-height: 62px;
+  }
+
+  .slider__btn-wrapper {
+    width: 96%;
+  }
+
+  .slider__wrapper {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    width: 1060px;
+    margin: 0 auto;
+  }
+
+  .slider__list {
+    padding-left: 85px;
+  }
+
+  .slider__feedback {
+    margin-top: 18px;
+  }
+
+  .slider__feedback-image {
+    margin-right: 24px;
+}
+
+  .slider__list-block {
+    width: 713px;
+  }
+
+  .slider__list-image {
+    display: none;
+  }
+
+  .slider__list-image-desktop {
+    display: block;
+  }
+
+}
+
+.active-slides {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  transition: all .8s linear;
+}
+
+
+
+

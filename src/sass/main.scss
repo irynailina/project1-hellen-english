@@ -1,0 +1,22 @@
+@import 'normalize.scss';
+
+//helpers
+@import './helper/fonts.scss';
+@import './helper/variables.scss';
+@import './helper/placeholder.scss';
+@import './helper/mixins.scss';
+
+@import 'base.scss';
+
+
+//sections
+@import './sections/header.scss';
+@import './sections/problems.scss';
+@import './sections/works.scss';
+@import './sections/programme.scss';
+@import './sections/choice.scss';
+@import './sections/teacher.scss';
+@import './sections/guaranty.scss';
+@import './sections/slider.scss';
+@import './sections/registration.scss';
+@import './sections/footer.scss';

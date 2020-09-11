@@ -1,0 +1,144 @@
+
+
+.works {
+  padding-bottom: 50px;
+}
+
+.works__title {
+  font-size: 20px;
+  font-family: 'Montserrat';
+  color: rgb(24, 25, 29);
+  font-weight: bold;
+  line-height: 1.65;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.works__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.works__list-item {
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
+  background-color: $secondary-color;
+  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  padding: 30px 20px;
+}
+
+.works__list-item:hover {
+  background-color: $decor-color;
+
+  transition: all 500ms linear  ;
+  
+
+  
+}
+
+.works__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.works__list-item-title {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 1.538;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.works__list-item-title::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 2px;
+  background-color: $decor-color;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.works__list-item:hover .works__list-item-title::after {
+  background-color: $secondary-color;
+}
+
+.icons-item-svg {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+
+  fill: $decor-color;
+}
+
+.works__list-item:hover .icons-item-svg {
+  fill: $secondary-color;
+}
+
+.works__list-item:hover .works__list-item-description,
+.works__list-item:hover .works__list-item-title {
+  color: $secondary-color;
+}
+
+.works__list-item-description {
+  text-align: center;
+  font-size: 11px;
+  font-family: 'Montserrat';
+  color: $about-color;
+  line-height: 1.818;
+  margin: 0 auto;
+}
+// --------------------------------------------
+@media screen and (min-width: 768px) {
+  .works__title {
+    font-size: 26px;
+  }
+}
+// --------------------------------------------
+@media screen and (min-width: 1280px) {
+  .works__title {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.489;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 50px;
+  }
+
+  .works__list-item {
+    width: 390px;
+    height: 340px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+
+  .works__list-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .works__list-item:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  .works__list-item-title {
+    font-size: 18px;
+    line-height: 1.62;
+  }
+
+  .works__list-item-description {
+    font-size: 15px;
+    line-height: 2.083;
+  }
+
+  .carryover {
+    display: block;
+  }
+}
